@@ -1,22 +1,513 @@
-.App {
+.gopick-logo {
+  height: 36px;
+  width: 131px;
+}
+
+.header-search-wrapper {
+  height: 40px;	
+  width: 299px;	
+  border-radius: 22.5px;	
+  background-color: #EBEBEB;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 19.51vw;
+}
+
+.header-myfeed-text {
+  height: 1.8%;	
+  width: 4.17%;	
+  color: #E23744;	
+  font-family: Avenir;	
+  font-size: 15px;	
+  font-weight: 500;	
+  line-height: 20px;
+}
+
+.header-rewards-text {
+  height: 1.8%;
+  width: 4.1%;
+  color: #4A4A4A;
+  font-family: Avenir;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.profile-image-wrapper{
+  height: 33px;	
+  width: 33px;	
+  /* background-color: #D8D8D8; */
+  left: 76.67vw;
+  position: absolute;
+}
+
+.post-review-wrapper {
+	height: 37px;
+	width: 128px;
+	border-radius: 18.5px;
+  background: linear-gradient(90deg, #FF0844 0%, #FFB199 100%);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  left: 81.56vw;
+  position: absolute;
+}
+
+.post-review {
+	height: 20px;
+	width: 86px;
+	color: #FFFFFF;
+	font-family: Avenir;
+	font-size: 15px;
+	font-weight: 900;
+	line-height: 20px;
+}
+
+.header-search-wrapper img {
+  margin: 0px 14px 0px 19px;
+}
+
+.header-wrapper {
+  box-sizing: border-box;	
+  height: 60px;	
+  /* width: 1440px;	 */
+  border: 1px solid #E7E7E7;	
+  background-color: #FFFFFF;	
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+}
+
+.logo-wrapper img {
+  position: relative;
+  left: 8.54vw;
+}
+
+.myfeed-wrapper {
+  left: 56.35vw;
+  position: absolute;
+}
+
+.rewards-wrapper {
+  left: 65vw;
+  position: absolute;
+}
+
+.notification-wrapper {
+  left: 73.4vw;
+  position: absolute;
+}
+
+
+/* Profile */
+.cover-photo-wrapper {
+  box-sizing: border-box;	
+  height: 25.24%;	
+  width: 100.56%;	
+  border: 1px solid rgb(197, 153, 153);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.profile-card-wrapper{
+  height: 647px;
+  width: 301px;
+  position: absolute;
+  left: 8.4vw;
+  top: 13.02vh;
+}
+
+.profile-card {
+  /* height: 49.28vh; */
+  width: 18.75vw;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(209,209,209,0.5);
+  text-align: center;
+  padding-left: 24px;
+  padding-top: 127px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  top: 21.81vh;
+  position: absolute;
+}
+
+.profile-card-image-wrapper {
+  top: 7.63vh;
+  position: relative;
+  width: 18.75vw;
+  z-index: 1;
+}
+
+.profile-card-image-wrapper img {
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.profile-card-name {
+  height: 29px;	
+  width: 197px;	
+  color: #333333;	
+  font-family: "Avenir Next";	
+  font-size: 21px;	
+  font-weight: bold;	
+  letter-spacing: 0.39px;	
+  line-height: 29px;	
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.profile-card-tag {
+  height: 20px;	
+  width: 95px;	
+  color: #787878;	
+  font-family: "Avenir Next";	
+  font-size: 15px;	
+  font-weight: 500;	
+  letter-spacing: 0.37px;	
+  line-height: 20px;	
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.profile-card-edit-btn {
+	box-sizing: border-box;
+	height: 36px;
+	width: 113px;
+	border: 1px solid #BCBCBC;
+	border-radius: 17.5px;
+  background-color: #FFFFFF;
   align-items: center;
+  display: flex;
+  margin-top: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.edit-profile-text {
+  height: 20px;	
+  width: 78px;	
+  color: #6A6A6A;	
+  font-family: "Avenir Next";	
+  font-size: 15px;	
+  font-weight: 500;	
+  letter-spacing: 0.25px;	
+  line-height: 20px;
+}
+
+.profile-desc-wrapper {
+  color: #333333;	
+  font-family: Avenir;	
+  font-size: 15px;	
+  font-weight: 300;	
+  letter-spacing: 0.2px;	
+  line-height: 22px;
+  text-align: left;
+  margin-top: 2.24vh;
+}
+
+.profile-link-wrapper {
+  align-self: flex-start;
+}
+
+.profile-link-wrapper span {
+  color: #4A90E2;
+  font-family: "Avenir Next";
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  margin-left: 0.45vw;
+}
+
+.profile-link-stat-wrapper span {
+  color: #BEBEBE;
+  font-family: "Avenir Next";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.profile-link-stat-wrapper div {
+	box-sizing: border-box;
+	border: 1px solid #E7E7E7;
+}
+
+.srivatsa-s-reviews {
+	height: 2.24%;
+	width: 10.63%;
+	color: #333333;
+	font-family: Avenir;
+	font-size: 18px;
+	font-weight: 900;
+	line-height: 25px;
+	text-align: center;
+}
+
+.srivatsa-s-reviews-rectangle {
+	height: 3px;
+  width: 30px;
+  border-radius: 10px;
+  background-color: #0A4B5B;
+}
+
+.srivatsa-s-reviews-oval {
+	height: 3px;
+  width: 3px;
+  background-color: #0A4B5B;
+  margin-left: 3px;
+}
+
+.review-header-wrapper {
+  position: absolute;
+  left: 28.75vw;
+  margin-top: 242px;
+}
+
+.top-reviewers-text {
+  position: absolute;
+  left: 43vw;
+  width: max-content;
+}
+
+.saved-drafts-text {
+  color: #E23744;
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  left: 35vw;
+  position: absolute;
+  width: fit-content;
+  margin-top: 5px;
+}
+
+.review-wrapper {
+    width: 40.97%;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(209,209,209,0.5);
+    position: absolute;
+    left: 28.75vw;
+    margin-top: 301px;
+    margin-bottom: 20px;
+}
+
+.review-headding {
+  color: #000000;
+  font-family: "Avenir Next";
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: 0.22px;
+  line-height: 26px;
+  margin-top: 15px;
+  margin-left: 24px;
+}
+
+.review-user{
+  margin-left: 24px;
+  margin-top: 10px;
+}
+
+.review-user-name {
+  color: #333333;
+  font-family: Avenir;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 20px;
+}
+
+.review-user-count {
+  color: #9B9B9B;
+  font-family: Avenir;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+.review-msg {
+  font-family: Avenir;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 24px;
+  margin-top: 15px;
+}
+
+.text-more {
+  color: #6075F9;
+}
+
+.review-star {
+  box-sizing: border-box;
+  height: 23.46px;
+  width: 24.49px;
+  border: 2px solid #9B9B9B;
+}
+
+.review-star-count {
+  color: #787878;	
+  font-family: Avenir;	
+  font-size: 14px;	
+  line-height: 19px;	
+  text-align: center;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+.review-product-name {
+  color: #333333;
+  font-family: Avenir;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 20px;
+}
+
+.review-product-name-review-count {
+  color: #9B9B9B;
+  font-family: Avenir;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.review-star-wrapper {
+  margin-left: 24px;
+  margin-bottom: 21px;
+}
+
+.review-product-details-wrapper {
+  margin-right: 27px;
+  margin-bottom: 14px;
+}
+
+.reviewers-list-wrapper {
+  width: 19.1%;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(209,209,209,0.5);
+  position: absolute;
+  left: 71.25vw;
+  margin-top: 301px;
+}
+
+.reviewers-list-name {
+  height: 20px;
+  width: 83px;
+  color: #333333;
+  font-family: Avenir;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 0.03px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.reviewers-list-count {
+  height: 18px;
+  width: 72px;
+  color: #9B9B9B;
+  font-family: Avenir;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.27px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.reviwers-list-item{
+  margin-top: 1.97vh;
+  margin-left: 0.9vw;
+  justify-content: space-between;
+}
+
+.reviewers-list-follow-btn{
+  box-sizing: border-box;
+  height: 2.69%;
+  width: 4.44vw;
+  border: 1px solid #D2D2D2;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  text-align: center;
+  margin-right: 1.04vw;
+  margin-top: 2.51vh;
+}
+
+.reviewers-list-follow-btn span {
+  color: #E23744;
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.copyright-wrapper {
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(209,209,209,0.5);
+  width: 19.1%;
+  position: absolute;
+  left: 71.25vw;
+  margin-top: 585px;
+}
+
+.copyright-wrapper div {
+  color: #9B9B9B;
+  font-family: Avenir;
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 0.19px;
+  line-height: 20px;
+  padding-left: 26.58px;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  padding-right: 21.47px;
+}
+
+.profile-stat-text {
+  display: inline-block;
+  width: 20%;
+  text-align: left;
+}
+
+.profile-stat-line {
+  display: inline-block;
+  width: 80%;
+  top: -13px;
+  margin-bottom: 3px;
+  box-sizing: border-box;
+  border: 1px solid #E7E7E7;
+}
+
+.profile-stat-label {
+  color: #9B9B9B;
+  font-family: "Avenir Next";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: center;
+}
+
+.profile-stat-value {
+  color: #333333;
+  font-family: "Avenir Next";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  text-align: center;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.review-image-wrapper img {
+  border-radius: 1%;
+  margin-left: 5%;
+  margin-bottom: 3%;
+  width: 90%;
 }
