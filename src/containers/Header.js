@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Header() {
+function Header(props) {
   return (
-    <div className="header-wrapper">
+    <div className={`header-wrapper ${ props.editMode && "header-edit-mode" }`}>
         <div className="logo-wrapper">
             <img src="https://res.cloudinary.com/dylz5aj3n/image/upload/v1571160822/Work/gopick-logo.png" alt="logo" className="gopick-logo"/>
         </div>

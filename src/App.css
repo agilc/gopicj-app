@@ -61,7 +61,7 @@
 	font-family: Avenir;
 	font-size: 15px;
 	font-weight: 900;
-	line-height: 20px;
+	line-height: 25px;
 }
 
 .header-search-wrapper img {
@@ -120,18 +120,16 @@
 }
 
 .profile-card {
-  /* height: 49.28vh; */
   width: 18.75vw;
   border-radius: 5px;
   background-color: #FFFFFF;
   box-shadow: 0 2px 4px 0 rgba(209,209,209,0.5);
   text-align: center;
-  padding-left: 24px;
   padding-top: 127px;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
-  top: 21.81vh;
+  top: 130px;
   position: absolute;
 }
 
@@ -148,15 +146,14 @@
 }
 
 .profile-card-name {
-  height: 29px;	
-  width: 197px;	
   color: #333333;	
   font-family: "Avenir Next";	
   font-size: 21px;	
   font-weight: bold;	
   letter-spacing: 0.39px;	
   line-height: 29px;	
-  text-align: center;
+  text-align: left;
+  padding-left: 24px;
 }
 
 .profile-card-tag {
@@ -169,6 +166,20 @@
   letter-spacing: 0.37px;	
   line-height: 20px;	
   text-align: center;
+  padding-left: 24px;
+}
+
+.profile-card-tag-blue {
+  height: 20px;	
+  width: 95px;	
+  font-family: "Avenir Next";	
+  font-size: 15px;	
+  font-weight: 500;	
+  letter-spacing: 0.37px;	
+  line-height: 20px;	
+  text-align: center;
+  padding-left: 14px;
+  padding-top: 3px;
 }
 
 .profile-card-edit-btn {
@@ -182,6 +193,8 @@
   display: flex;
   margin-top: 10px;
   justify-content: center;
+  cursor: pointer;
+  margin-left: 24px;
 }
 
 .edit-profile-text {
@@ -204,10 +217,12 @@
   line-height: 22px;
   text-align: left;
   margin-top: 2.24vh;
+  margin-left: 24px;
 }
 
 .profile-link-wrapper {
   align-self: flex-start;
+  margin-left: 24px;
 }
 
 .profile-link-wrapper span {
@@ -225,6 +240,10 @@
   font-size: 12px;
   font-weight: 600;
   line-height: 16px;
+}
+
+.profile-link-stat-wrapper {
+  margin-left: 24px;
 }
 
 .profile-link-stat-wrapper div {
@@ -266,7 +285,7 @@
 .top-reviewers-text {
   position: absolute;
   left: 43vw;
-  width: max-content;
+  display: table;
 }
 
 .saved-drafts-text {
@@ -277,7 +296,7 @@
   line-height: 19px;
   left: 35vw;
   position: absolute;
-  width: fit-content;
+  display: table;
   margin-top: 5px;
 }
 
@@ -481,6 +500,16 @@ body {
   margin-bottom: 3px;
   box-sizing: border-box;
   border: 1px solid #E7E7E7;
+  margin-left: 24px;
+}
+
+.profile-stat-line1 {
+  display: inline-block;
+  width: 80%;
+  top: -13px;
+  margin-bottom: 3px;
+  box-sizing: border-box;
+  border: 1px solid #E7E7E7;
 }
 
 .profile-stat-label {
@@ -510,4 +539,92 @@ body {
   margin-left: 5%;
   margin-bottom: 3%;
   width: 90%;
+}
+
+.edit-mode-opacity {
+  opacity: 0.3;
+}
+
+.profile-card-update-btn {
+  box-sizing: border-box;
+  height: 36px;
+  width: 113px;
+  border: 1px solid #FF9CA4;
+  border-radius: 17.5px;
+  background-color: #FFFFFF;
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  cursor: pointer;
+  align-self: center;
+}
+
+.update-profile-text {
+  color: #E23744;	
+  font-family: "Avenir Next";	
+  font-size: 15px;	
+  font-weight: 500;	
+  letter-spacing: 0.25px;	
+  line-height: 20px;
+}
+
+.text-blue {
+  color: #4A90E2 !important;
+}
+
+.header-edit-mode div {
+  opacity: 0.3;
+}
+
+.header-edit-mode {
+  background-color: #F6F7F9;
+}
+
+.change-header-photo {
+  position: absolute;
+  left: 43vw;
+  top: 140px;
+  color: #FFFFFF;	
+  font-family: "Avenir Next";	
+  font-size: 20px;	
+  font-weight: 600;	
+  letter-spacing: 0.32px;	
+  line-height: 27px;	
+  text-align: center;
+}
+
+.change-profile-photo {
+  position: absolute;
+    top: 80px;
+    color: #FFFFFF;
+    font-family: "Avenir Next";
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.32px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.profile-stats-data {
+  margin-left: 24px;
+}
+
+.profile-website-wrapper {
+  border-radius: 10px;
+  background-color: #F2F2F2;
+  margin-left: 10px;
+  margin-right: 16px;
+  margin-top: 9px;
+  text-align: left;
+  padding-left: 17px;
+}
+
+.profile-website-wrapper span {
+  color: #6A6A6A;
+  font-family: Avenir;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+  line-height: 22px;
 }
