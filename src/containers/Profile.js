@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
-import ReviewerItem from '../components/ReviewerItem';
-import StatsItem from '../components/StatsItem';
+import ReviewerItem from 'components/ReviewerItem';
+import StatsItem from 'components/StatsItem';
+
+import coverPageIcon from "assets/cover-page.png";
+import blackDogIcon from "assets/black-dog.jpg";
+import profilePicture from "assets/profile-picture.png";
+import girlBlackBgLogo from "assets/girl-black-bg.png";
+import chainLinksLogo from "assets/chain-links.png";
+import bitmapIcon from "assets/bitmap.png";
+import onePlusLargeIcon from "assets/onepluslarge.png";
+import starIcon from "assets/star.jpg";
+import onePlusIcon from "assets/oneplus6t.png";
 
 class Profile extends Component {
 
@@ -15,27 +25,27 @@ class Profile extends Component {
         {
             name: "Mark Taylor",
             reviewCount: "345",
-            image: "https://res.cloudinary.com/dylz5aj3n/image/upload/v1571283446/Work/bitmap.png"
+            image: bitmapIcon
         },
         {
             name: "Effie Harper",
             reviewCount: "43",
-            image: "https://res.cloudinary.com/dylz5aj3n/image/upload/v1571283446/Work/bitmap.png"
+            image: bitmapIcon
         },
         {
             name: "Zachary Hampton",
             reviewCount: "452",
-            image: "https://res.cloudinary.com/dylz5aj3n/image/upload/v1571283446/Work/bitmap.png"
+            image: bitmapIcon
         },
         {
             name: "Randy Johnson",
             reviewCount: "123",
-            image: "https://res.cloudinary.com/dylz5aj3n/image/upload/v1571283446/Work/bitmap.png"
+            image: bitmapIcon
         },
         {
             name: "Jared Olson",
             reviewCount: "123",
-            image: "https://res.cloudinary.com/dylz5aj3n/image/upload/v1571283446/Work/bitmap.png"
+            image: bitmapIcon
         },
     ];
 
@@ -53,11 +63,7 @@ class Profile extends Component {
                 <div className="cover-photo-wrapper">
                     { this.props.editMode && <span className="change-header-photo">Change Header Photo</span>}
                     <img 
-                        src={ 
-                            this.props.editMode ? 
-                            "https://res.cloudinary.com/dylz5aj3n/image/upload/v1571334150/Work/black-dog.jpg" 
-                            : "https://res.cloudinary.com/dylz5aj3n/image/upload/v1571229632/Work/cover-page.png"
-                        }
+                        src={ this.props.editMode ? blackDogIcon : coverPageIcon }
                         className="w-100" 
                         alt="cover"
                     />
@@ -66,11 +72,7 @@ class Profile extends Component {
                     <div className="d-flex justify-content-center profile-card-image-wrapper">
                     { this.props.editMode && <span className="change-profile-photo">Change Profile <br/>Photo</span> }
                         <img 
-                            src={
-                                this.props.editMode ? 
-                                "https://res.cloudinary.com/dylz5aj3n/image/upload/v1571334891/Work/girl-black-bg.png"
-                                : "https://res.cloudinary.com/dylz5aj3n/image/upload/v1571226636/Work/profile-picture.png" 
-                                }
+                            src={ this.props.editMode ? girlBlackBgLogo : profilePicture }
                             alt="pro-img"
                         />
                     </div>
@@ -91,7 +93,7 @@ class Profile extends Component {
                             Favorite hash - #Viral</span>
                         </div>
                         <div className={`profile-link-wrapper float-left ${ this.props.editMode && "d-none"}`}>
-                            <img src="https://res.cloudinary.com/dylz5aj3n/image/upload/v1571247454/Work/chain-links.png" alt="link"/>
+                            <img src={ chainLinksLogo } alt="link"/>
                             <span>technophie.com</span>
                         </div>
                         <div className={`profile-link-stat-wrapper mt-3 ${ this.props.editMode && "d-none"}`}>
@@ -173,7 +175,7 @@ class Profile extends Component {
                     <div className="review-headding"><span role="img" aria-label="thumps-up">👍</span>-It's all about that amazing Screen and Battery</div>
                     <div className="review-user d-flex">
                         <div>
-                            <img src="https://res.cloudinary.com/dylz5aj3n/image/upload/v1571310570/Work/Bitmap_1.png" alt="review-img"/>
+                            <img src={bitmapIcon} alt="review-img"/>
                         </div>
                         <div className="pl-2">
                             <div className="review-user-name">The Verge</div>
@@ -185,18 +187,18 @@ class Profile extends Component {
                     in the OnePlus 5 was already the highest the industry had ever seen. <span className="text-more">(readmore)</span></div>
         
                     <div className="review-image-wrapper">
-                        <img src="https://res.cloudinary.com/dylz5aj3n/image/upload/v1571311817/Work/onepluslarge.png" alt="review-img"/>
+                        <img src={ onePlusLargeIcon } alt="review-img"/>
                     </div>
                     <div className="d-flex justify-content-between">
                         <div className="d-flex align-items-center review-star-wrapper">
                             <div>
-                                <img src="https://res.cloudinary.com/dylz5aj3n/image/upload/v1571311247/Work/star.jpg" alt="product"/>
+                                <img src={ starIcon } alt="product"/>
                             </div>
                             <div className="review-star-count">0</div>
                         </div>
                         <div className="d-flex align-items-center review-product-details-wrapper">
                             <div>
-                                <img src="https://res.cloudinary.com/dylz5aj3n/image/upload/v1571310876/Work/oneplus6t.png" alt="product"/>
+                                <img src={ onePlusIcon } alt="product"/>
                             </div>
                             <div className="d-flex flex-column">
                                 <span className="review-product-name">Oneplus 6T</span>
